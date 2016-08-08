@@ -23,6 +23,8 @@ $(INSTALLED_RECOVERYIMAGE_TARGET): $(MKBOOTIMG) \
 	cp -f device/meizu/m2note/res/OswaldCondensed-Regular.ttf $(PRODUCT_OUT)/recovery/root/twres/fonts/RobotoCondensed-Regular.ttf
 	@echo ----- Replace RU translation ------
 	cp -f device/meizu/m2note/res/ru.xml $(PRODUCT_OUT)/recovery/root/twres/languages/ru.xml
+	@echo ----- Replace Ukrainian translation ------
+	cp -f device/meizu/m2note/res/uk.xml $(PRODUCT_OUT)/recovery/root/twres/languages/uk.xml
 	@echo ----- Creating ramdisk ------
 	chmod 644 $(PRODUCT_OUT)/recovery/root/init.rc
 	chmod 644 $(PRODUCT_OUT)/recovery/root/default.prop
