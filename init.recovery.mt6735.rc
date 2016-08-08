@@ -1,2 +1,3 @@
 on init
     symlink /extSdCard /external_sd
+    symlink /dev/block/platform/mtk-msdc.0/11230000.MSDC0/by-name /dev/block/platform/mtk-msdc.0/by-name

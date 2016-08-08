@@ -1,13 +1,13 @@
 # mount point fstype device
 
-/protect_f    ext4    /dev/block/mmcblk0p5
-/protect_s    ext4    /dev/block/mmcblk0p6
-/boot         emmc    /dev/block/mmcblk0p9
-/recovery     emmc    /dev/block/mmcblk0p10
-/cache        ext4    /dev/block/mmcblk0p24
-/system       ext4    /dev/block/mmcblk0p23
-/data         ext4    /dev/block/mmcblk0p25                      length=-16384
-/extSdCard    auto    /dev/block/mmcblk1p1 /dev/block/mmcblk1    flags=display="MicroSD card";storage;wipeingui;removable
-/custom       ext4    /dev/block/mmcblk0p19
-/nvdata       ext4    /dev/block/mmcblk0p21
-/usb-otg      auto    /dev/block/sda1 /dev/block/sda             flags=display="USB OTG drive";storage;wipeingui;removable
+/protect_f    ext4    /dev/block/platform/mtk-msdc.0/by-name/protect1
+/protect_s    ext4    /dev/block/platform/mtk-msdc.0/by-name/protect2
+/boot         emmc    /dev/block/platform/mtk-msdc.0/by-name/boot
+/recovery     emmc    /dev/block/platform/mtk-msdc.0/by-name/recovery
+/cache        ext4    /dev/block/platform/mtk-msdc.0/by-name/cache
+/system       ext4    /dev/block/platform/mtk-msdc.0/by-name/system
+/data         ext4    /dev/block/platform/mtk-msdc.0/by-name/userdata   length=-16384
+/extSdCard    auto    /dev/block/mmcblk1p1 /dev/block/mmcblk1           flags=display="MicroSD card";storage;wipeingui;removable
+/custom       ext4    /dev/block/platform/mtk-msdc.0/by-name/custom
+/nvdata       ext4    /dev/block/platform/mtk-msdc.0/by-name/nvdata
+/usb-otg      auto    /dev/block/sda1 /dev/block/sda                    flags=display="USB OTG drive";storage;wipeingui;removable
