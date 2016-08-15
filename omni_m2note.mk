@@ -16,14 +16,7 @@
 
 LOCAL_PATH := device/meizu/m2note
 
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-	LOCAL_KERNEL := $(LOCAL_PATH)/kernel
-else
-	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-endif
-
 PRODUCT_COPY_FILES += \
-    $(LOCAL_KERNEL):kernel \
     $(LOCAL_PATH)/init.recovery.mt6735.rc:root/init.recovery.mt6735.rc
 
 # Necessary to mount a PC
