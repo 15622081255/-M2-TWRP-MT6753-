@@ -2,7 +2,7 @@
     {
         "remote": "github",
         "repository": "ShevT/android_kernel_m2note",
-        "revision": "master",
+        "revision": "mm-6.0",
         "target_path": "kernel/meizu/m2note"
     }
 ]
