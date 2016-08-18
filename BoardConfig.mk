@@ -45,7 +45,7 @@ TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 # Kernel
 TARGET_KERNEL_CONFIG := m2note_recovery_defconfig
 TARGET_KERNEL_SOURCE := kernel/meizu/m2note
-BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE += bootopt=64S3,32N2,64N2
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 MTK_APPENDED_DTB_SUPPORT := yes
 BOARD_KERNEL_BASE := 0x40078000
