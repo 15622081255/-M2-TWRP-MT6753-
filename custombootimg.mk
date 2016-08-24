@@ -27,6 +27,7 @@ $(INSTALLED_RECOVERYIMAGE_TARGET): $(MKBOOTIMG) \
 	cp -f device/meizu/m2note/res/uk.xml $(PRODUCT_OUT)/recovery/root/twres/languages/uk.xml
 	@echo ----- Creating ramdisk ------
 	chmod 644 $(PRODUCT_OUT)/recovery/root/init.rc
+	chmod 644 $(PRODUCT_OUT)/recovery/root/init.recovery.mt6735.rc
 	chmod 644 $(PRODUCT_OUT)/recovery/root/default.prop
 	(cd $(PRODUCT_OUT)/recovery/root/ && find * | sort | cpio -o -H newc) | gzip -9 > $(recovery_ramdisk)
 	@echo ----- Making recovery image ------
